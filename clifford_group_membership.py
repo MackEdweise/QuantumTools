@@ -177,22 +177,4 @@ QFT = 0.5 * numpy.array([[1,1,1,1],
                              [1, -numpy.complex(0,1), -1, numpy.complex(0,1)]
                            ])
 
-# create U4 which adds 1 mod 4
-
-U4 = numpy.array([[0,0,0,1],
-                  [1,0,0,0],
-                  [0,1,0,0],
-                  [0,0,1,0]
-                ])
-
-# create U8 which adds 1 mod 8
-U8 = numpy.array([[0,0,0,0,0,0,0,1],
-                  [1,0,0,0,0,0,0,0],
-                  [0,1,0,0,0,0,0,0],
-                  [0,0,1,0,0,0,0,0],
-                  [0,0,0,1,0,0,0,0],
-                  [0,0,0,0,1,0,0,0],
-                  [0,0,0,0,0,1,0,0],
-                  [0,0,0,0,0,0,1,0]])
-
-check_for_clifford_group_membership(U8, 3)
+check_for_clifford_group_membership(QFT, 3)
