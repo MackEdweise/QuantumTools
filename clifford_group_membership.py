@@ -195,4 +195,10 @@ U8 = numpy.array([[0,0,0,0,0,0,0,1],
                   [0,0,0,0,0,1,0,0],
                   [0,0,0,0,0,0,1,0]])
 
-check_for_clifford_group_membership(U8, 3)
+SWAP = numpy.array([[1,0,0,0],
+                  [0,0,1,0],
+                  [0,1,0,0],
+                  [0,0,0,1]
+                ])
+
+check_for_clifford_group_membership(SWAP, 2)
