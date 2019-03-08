@@ -1,6 +1,5 @@
 import numpy
 import itertools
-from numpy.random.mtrand import permutation
 from functools import reduce
 
 # pauli matrices and I
