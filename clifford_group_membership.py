@@ -1,19 +1,8 @@
 import numpy
 import itertools
 from functools import reduce
+from gates import X, Y, Z, I
 
-# pauli matrices and I
-I = numpy.array([[1,0], 
-                 [0,1]])
-
-X = numpy.array([[0,1], 
-                 [1,0]])
-
-Y = numpy.array([[0, numpy.complex(0,-1)],
-                 [numpy.complex(0,1), 0]])
-
-Z = numpy.array([[1,0],
-                 [0,-1]])
 
 def check_for_clifford_group_membership(operator, group):
     
