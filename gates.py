@@ -16,16 +16,18 @@ Z = numpy.array([[1,0],
 S = numpy.array([[1,0],
                  [0,numpy.complex(0,1)]])
 
+H = numpy.array([[1/numpy.sqrt(2),1/numpy.sqrt(2)],
+                 [1/numpy.sqrt(2),-1/numpy.sqrt(2)]])
+
 CNOT = numpy.array([[1, 0, 0, 0],
                     [0, 1, 0, 0],
                     [0, 0, 0, 1],
                     [0, 0, 1, 0]])
 
 SWAP = numpy.array([[1,0,0,0],
-                  [0,0,1,0],
-                  [0,1,0,0],
-                  [0,0,0,1]
-                ])
+                    [0,0,1,0],
+                    [0,1,0,0],
+                    [0,0,0,1]])
 
 
 def U(theta, lamb, phi):
